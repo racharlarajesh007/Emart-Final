@@ -1,0 +1,71 @@
+<style>
+    footer {
+
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: lightslategray;
+        color: black;
+        text-align: center;
+    }
+</style>
+<div class="container pt-5">
+	<div class="row">
+		<div class="col"></div>
+		<div class="col-6">
+			<div class="card bg-transparent">
+				<div class="card-header text-center text-white bg-info"><b>Sign Up</b></div>
+				<div class="card-body">
+					<form #signUpForm="ngForm"action="">
+						<div class="row">
+							<div class="col">
+								<div class="Form-group mx-2 my-3  text-white">
+									<label for="username">USER</label>
+									<input type="text" class="form-control" id="username" placeholder="username"
+										name="username" [(ngModel)]="buyerUsername">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col text-white">
+								<div class="Form-group mx-2 my-3">
+									<label for="password">PASSWORD</label>
+									<input type="text" class="form-control" id="password" placeholder="password"
+										name="password" [(ngModel)]="buyerPassword">
+										<label for="email">EMAILID</label>
+									<input type="text" class="form-control" id="email" placeholder="email"
+										name="email" [(ngModel)]="buyerEmail">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col text-white">
+								<div class="Form-group mx-2 my-3">
+									<label for="phoneno">MobileNo</label>
+									<input type="tel" class="form-control" id="mobile" placeholder="mobile number"
+										name="mobile" [(ngModel)]="buyerMobile">
+								</div>
+							</div>
+							<div class="col text-white">
+								<div class="Form-group mx-2 my-3">
+									<label for="date">Date</label>
+									<input type="date" class="form-control" id="date" placeholder="date"
+										name="date" [(ngModel)]="buyerDate">
+								</div>
+							</div>
+
+
+						</div>
+						<button type="submit" class="btn btn-info float-center" (click)="addBuyer()">Register</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+		</div>
+	</div>
+</div>
+<footer class="sticky-footer fixed-bottom">
+    2020 @Copyright
+</footer>
